@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pandurski.bettingtips.todays_tips"
+    android:background="#C0C0C0">
+
+    <TextView
+        android:id="@+id/date_todays_tips"
+        android:layout_width="379dp"
+        android:layout_height="41dp"
+        android:background="#006400"
+        android:text="11.11.2011"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/league_one"
+        android:layout_width="380dp"
+        android:layout_height="22dp"
+        android:background="#DCDCDC"
+        android:text="league"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_todays_tips" />
+
+
+
+    <TextView
+        android:id="@+id/match_information_one"
+        android:layout_width="383dp"
+        android:layout_height="34dp"
+        android:text="match information"
+        android:textAlignment="center"
+        android:background="#696969"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_one" />
+
+    <TextView
+        android:id="@+id/prediction_one"
+        android:layout_width="380dp"
+        android:layout_height="37dp"
+        android:text="prediction"
+        android:textAlignment="center"
+        android:background="#696969"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_information_one" />
+
+    <ImageView
+        android:id="@+id/league_flag_one"
+        android:layout_width="62dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_one"
+        app:layout_constraintTop_toBottomOf="@+id/league_one"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/italy"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <ImageView
+        android:id="@+id/prediction_result_one"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/match_information_one"
+        app:layout_constraintTop_toBottomOf="@+id/league_one"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/correct" />
+
+    <TextView
+        android:id="@+id/league_two"
+        android:layout_width="379dp"
+        android:layout_height="22dp"
+        android:background="#DCDCDC"
+        android:text="league two"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prediction_one" />
+
+    <TextView
+        android:id="@+id/match_information_two"
+        android:layout_width="379dp"
+        android:layout_height="34dp"
+        android:text="match information two"
+        android:textAlignment="center"
+        android:background="#696969"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_two" />
+
+    <TextView
+        android:id="@+id/prediction_two"
+        android:layout_width="381dp"
+        android:layout_height="37dp"
+        android:background="#696969"
+        android:text="prediction two"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_information_two" />
+
+    <ImageView
+        android:id="@+id/league_flag_two"
+        android:layout_width="62dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_two"
+        app:layout_constraintEnd_toStartOf="@+id/match_information_two"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_two"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/italy" />
+
+    <ImageView
+        android:id="@+id/prediction_result_two"
+        android:layout_width="61dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_two"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/inncorrect" />
+
+    <TextView
+        android:id="@+id/league_three"
+        android:layout_width="383dp"
+        android:layout_height="22dp"
+        android:background="#DCDCDC"
+        android:text="league three"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prediction_two" />
+
+    <TextView
+        android:id="@+id/match_information_three"
+        android:layout_width="382dp"
+        android:layout_height="34dp"
+        android:text="match information three"
+        android:textAlignment="center"
+        android:background="#696969"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_three" />
+
+    <TextView
+        android:id="@+id/prediction_three"
+        android:layout_width="385dp"
+        android:layout_height="37dp"
+        android:background="#696969"
+        android:text="prediction three"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_information_three" />
+
+    <ImageView
+        android:id="@+id/league_flag_three"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_three"
+        app:layout_constraintEnd_toStartOf="@+id/match_information_three"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_three"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/italy" />
+
+    <ImageView
+        android:id="@+id/prediction_result_three"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toEndOf="@+id/match_information_three"
+        app:layout_constraintTop_toBottomOf="@+id/league_three"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/correct" />
+
+    <TextView
+        android:id="@+id/league_four"
+        android:layout_width="382dp"
+        android:layout_height="22dp"
+        android:background="#DCDCDC"
+        android:text="league four"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prediction_three" />
+
+    <TextView
+        android:id="@+id/match_information_four"
+        android:layout_width="381dp"
+        android:layout_height="34dp"
+        android:text="match information two"
+        android:textAlignment="center"
+        android:background="#696969"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_four" />
+
+    <TextView
+        android:id="@+id/prediction_four"
+        android:layout_width="384dp"
+        android:layout_height="37dp"
+        android:background="#696969"
+        android:text="prediction four"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_information_four" />
+
+    <ImageView
+        android:id="@+id/league_flag_four"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/prediction_four"
+        app:layout_constraintEnd_toStartOf="@+id/match_information_four"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_four"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/italy" />
+
+    <ImageView
+        android:id="@+id/prediction_result_four"
+        android:layout_width="61dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/match_information_four"
+        app:layout_constraintTop_toBottomOf="@+id/league_four"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/inncorrect" />
+
+    <TextView
+        android:id="@+id/free_space"
+        android:layout_width="383dp"
+        android:layout_height="100dp"
+        android:background="#006400"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prediction_four" />
+
+</android.support.constraint.ConstraintLayout>

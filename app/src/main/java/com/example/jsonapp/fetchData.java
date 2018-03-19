@@ -27,7 +27,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
     protected Void doInBackground(Void... voids) {
 
         try {
-            URL url = new URL("https://github.com/IvanPandurski/master/blob/master/json_file.txt");
+            URL url = new URL("https://drive.google.com/open?id=16mC0gkrIljCK-NykIfDa0kj1YDXB3s9P");
 
 
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
