@@ -81,7 +81,7 @@
         app:layout_constraintStart_toEndOf="@+id/match_information_one"
         app:layout_constraintTop_toBottomOf="@+id/league_one"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/transp" />
+        app:srcCompat="@drawable/correct" />
 
     <TextView
         android:id="@+id/league_two"
@@ -100,7 +100,7 @@
         android:layout_height="34dp"
         android:text="match information two"
         android:textAlignment="center"
-        android:background="@color/colorBackgroundGrey"
+        android:background="#696969"
         android:textSize="22dp"
         android:textColor="@color/colorTextWhite"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -130,8 +130,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/league_two"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintVertical_bias="0.0"/>
 
     <ImageView
         android:id="@+id/prediction_result_two"
@@ -142,7 +141,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/league_two"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/transp" />
+        app:srcCompat="@drawable/inncorrect" />
 
     <TextView
         android:id="@+id/league_three"
@@ -204,7 +203,7 @@
         app:layout_constraintStart_toEndOf="@+id/match_information_three"
         app:layout_constraintTop_toBottomOf="@+id/league_three"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/transp" />
+        app:srcCompat="@drawable/correct" />
 
     <TextView
         android:id="@+id/league_four"
@@ -264,7 +263,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/match_information_four"
         app:layout_constraintTop_toBottomOf="@+id/league_four"
-        app:srcCompat="@drawable/transp" />
+        app:srcCompat="@drawable/inncorrect" />
 
     <TextView
         android:id="@+id/free_space"
@@ -276,15 +275,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prediction_four" />
 
-
     <ImageButton
-        android:id="@+id/switch_activity"
+        android:id="@+id/switch_activity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/btn_previous"
+        android:layout_marginTop="4dp"
         android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/blank_space" />
 
     <TextView

@@ -9,4 +9,5 @@ public class Prediction {
     public String league;
     public String match_info;
     public String prediction;
+    public String result;
 }
