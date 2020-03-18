@@ -8,8 +8,7 @@ void fun(int n)
     if(n > 0)
     {
         printf("%d ", n); //at calling time
-        fun(n-1);
-    }
+        fun(n-1);    }
 }
 
 //head recursion
@@ -239,7 +238,7 @@ int f (int &x, int c)
 //};
 
 #include "InfixToPostfix.h"
-
+#include "queue.h"
 int main(int argc, char *argv[])
 {
 //    b asd{};
@@ -439,9 +438,17 @@ int main(int argc, char *argv[])
 //    s.pop();
 //    s.display();
 
-     InfixToPostfix infix("2+3*4-6/2");
-     printf("%s \n", infix.toPostfix());
-     printf("%d \n", infix.Evaluate());
+//     InfixToPostfix infix("2+3*4-6/2");
+//     printf("%s \n", infix.toPostfix());
+//     printf("%d \n", infix.Evaluate());
+//     Queue q(5);
+
+//      q.enqueue(10);
+//      q.enqueue(20);
+//      q.enqueue(30);
+
+//      q.Display();
+
 
     return 0;
 }
