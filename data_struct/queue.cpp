@@ -1,7 +1,6 @@
 #include "queue.h"
 #include <iostream>
-
-void Queue::enqueue(int x)
+void Queue::enqueue(Node* x)
 {
      if(rear==size-1)
         printf("Queue Full\n");
@@ -12,9 +11,9 @@ void Queue::enqueue(int x)
          Q[rear]=x;
      }
 }
-int Queue::dequeue()
+Node* Queue::dequeue()
 {
-     int x=-1;
+     Node* x = nullptr;
      if(front==rear)
         printf("Queue is Empty\n");
      else
@@ -28,5 +27,9 @@ void Queue::Display()
 {
      for(int i=front+1;i<=rear;i++)
          printf("%d ",Q[i]);
-         printf("\n");
+     printf("\n");
+}
+bool Queue::empty()
+{
+    return front == rear;
 }

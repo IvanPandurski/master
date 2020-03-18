@@ -238,7 +238,9 @@ int f (int &x, int c)
 //};
 
 #include "InfixToPostfix.h"
-#include "queue.h"
+#include "binarytreegenerator.h"
+
+
 int main(int argc, char *argv[])
 {
 //    b asd{};
@@ -449,6 +451,14 @@ int main(int argc, char *argv[])
 
 //      q.Display();
 
+
+//    Tree p;
+//    p.CreateTree();
+//    p.preorder(p.root);
+
+    binaryTreeGenerator t;
+    t.CreateTree();
+    t.preorder(t.get_root());
 
     return 0;
 }
