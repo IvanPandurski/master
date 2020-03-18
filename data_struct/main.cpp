@@ -457,8 +457,24 @@ int main(int argc, char *argv[])
 //    p.preorder(p.root);
 
     binaryTreeGenerator t;
-    t.CreateTree();
-    t.preorder(t.get_root());
+//    t.CreateTree();
+//    t.preorder(t.get_root());
+    t.insert(5);
+    t.insert(2);
+    t.insert(15);
+    t.insert(22);
+    t.insert(1);
+
+    t.inorder(t.get_root());
+
+    if(t.search(22) == nullptr)
+    {
+        printf("element is not found \n");
+    }
+    else
+    {
+        printf("element is found \n");
+    }
 
     return 0;
 }

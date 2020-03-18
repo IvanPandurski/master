@@ -105,3 +105,87 @@ int binaryTreeGenerator::height(Node *root)
     else
         return y+1;
 }
+
+void binaryTreeGenerator::insert(int key)
+{
+    Node* t = root;
+    Node* r = nullptr;
+    Node* p = nullptr;
+
+    if(root == nullptr)
+    {
+        p = new Node;
+        p->data = key;
+        p->lchild = p->rchild = nullptr;
+        root = p;
+        return;
+    }
+
+    while( t != nullptr)
+    {
+        r = t;
+        if(key < t->data) { t = t->lchild;}
+        else if(key > t->data) { t = t->rchild;}
+        else {return;}
+    }
+
+    p = new Node;
+    p->data = key;
+    p->lchild = p->rchild = nullptr;
+
+    if(key < r->data) {r->lchild = p;}
+    else {r->rchild = p; }
+}
+
+Node *binaryTreeGenerator::search(int key)
+{
+    Node* t = root;
+    while(t != nullptr)
+    {
+        if(key == t->data) {return t;}
+        else if(key < t->data) { t = t->lchild;}
+        else {t = t->rchild;}
+    }
+
+    return nullptr;
+}
+
+//void binaryTreeGenerator::delete_key(int key)
+//{
+//    Node* t = root;
+//    while(t != nullptr)
+//    {
+//        if(key == t->data) {return t;}
+//        else if(key < t->data) { t = t->lchild;}
+//        else {t = t->rchild;}
+//    }
+
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
