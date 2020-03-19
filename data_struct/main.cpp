@@ -459,11 +459,30 @@ int main(int argc, char *argv[])
     binaryTreeGenerator t;
 //    t.CreateTree();
 //    t.preorder(t.get_root());
-    t.insert(5);
-    t.insert(2);
-    t.insert(15);
-    t.insert(22);
-    t.insert(1);
+    t.set_root(t.recursiveInsert(t.get_root(), 5));
+    t.recursiveInsert(t.get_root(),2);
+    t.recursiveInsert(t.get_root(),15);
+    t.recursiveInsert(t.get_root(),22);
+    t.recursiveInsert(t.get_root(),1);
+
+//    t.insert(15);
+//    t.insert(22);
+//    t.insert(1);
+
+    t.inorder(t.get_root());
+
+    if(t.search(22) == nullptr)
+    {
+        printf("element is not found \n");
+    }
+    else
+    {
+        printf("element is found \n");
+    }
+
+
+
+    t.recursiveDelete(t.get_root(), 22);
 
     t.inorder(t.get_root());
 

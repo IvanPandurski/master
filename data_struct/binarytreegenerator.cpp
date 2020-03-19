@@ -137,6 +137,30 @@ void binaryTreeGenerator::insert(int key)
     else {r->rchild = p; }
 }
 
+Node *binaryTreeGenerator::recursiveInsert(Node* p, int key)
+{
+    Node* t = nullptr;
+    if(p == nullptr)
+    {
+        t = new Node;
+        t->data = key;
+        t->lchild = t->rchild = nullptr;
+        return  t;
+    }
+
+    if( key < root->data)
+    {
+        p->lchild = recursiveInsert(p->lchild, key);
+    }
+    else if(key > p->data)
+    {
+        p->rchild = recursiveInsert(p->rchild, key);
+    }
+
+    return p;
+}
+
+
 Node *binaryTreeGenerator::search(int key)
 {
     Node* t = root;
@@ -150,17 +174,64 @@ Node *binaryTreeGenerator::search(int key)
     return nullptr;
 }
 
-//void binaryTreeGenerator::delete_key(int key)
-//{
-//    Node* t = root;
-//    while(t != nullptr)
-//    {
-//        if(key == t->data) {return t;}
-//        else if(key < t->data) { t = t->lchild;}
-//        else {t = t->rchild;}
-//    }
+Node *binaryTreeGenerator::recursiveDelete(Node *p, int key)
+{
+    Node* q = nullptr;
 
-//}
+    if(p == nullptr)
+    {
+        return nullptr;
+    }
+    if(p->lchild == nullptr && p->rchild == nullptr)
+    {
+        if( p == root) {root = nullptr;}
+        delete p;
+        return nullptr;
+    }
+
+    if(key < p->data)
+    {
+        p->lchild = recursiveDelete(p->lchild, key);
+    }
+    else if(key > p->data)
+    {
+        p->rchild = recursiveDelete(p->rchild, key);
+    }
+    else
+    {
+        if(height(p->lchild) > height(p->rchild))
+        {
+            inPre(p->lchild);
+            p->data = q->data;
+            p->lchild = recursiveDelete(p->lchild, q->data);
+        }
+        else
+        {
+            inSucc(p->lchild);
+            p->data = q->data;
+            p->lchild = recursiveDelete(p->lchild, q->data);
+        }
+
+    }
+
+}
+
+Node *binaryTreeGenerator::inPre(struct Node *p)
+{
+    while(p && p->rchild!=NULL)
+        p=p->rchild;
+
+    return p;
+}
+Node *binaryTreeGenerator::inSucc(struct Node *p)
+{
+    while(p && p->lchild!=NULL)
+        p=p->lchild;
+
+    return p;
+}
+
+
 
 
 
