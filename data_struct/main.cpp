@@ -237,10 +237,10 @@ int f (int &x, int c)
 
 //};
 
-#include "InfixToPostfix.h"
-#include "binarytreegenerator.h"
+//#include "InfixToPostfix.h"
+//#include "binarytreegenerator.h"
 
-
+#include "avltreegenerator.h"
 int main(int argc, char *argv[])
 {
 //    b asd{};
@@ -456,44 +456,65 @@ int main(int argc, char *argv[])
 //    p.CreateTree();
 //    p.preorder(p.root);
 
-    binaryTreeGenerator t;
-//    t.CreateTree();
-//    t.preorder(t.get_root());
-    t.set_root(t.recursiveInsert(t.get_root(), 5));
-    t.recursiveInsert(t.get_root(),2);
-    t.recursiveInsert(t.get_root(),15);
-    t.recursiveInsert(t.get_root(),22);
-    t.recursiveInsert(t.get_root(),1);
+//    binaryTreeGenerator t;
+////    t.CreateTree();
+////    t.preorder(t.get_root());
+//    t.set_root(t.recursiveInsert(t.get_root(), 5));
+//    t.recursiveInsert(t.get_root(),2);
+//    t.recursiveInsert(t.get_root(),15);
+//    t.recursiveInsert(t.get_root(),22);
+//    t.recursiveInsert(t.get_root(),1);
 
 //    t.insert(15);
 //    t.insert(22);
 //    t.insert(1);
 
-    t.inorder(t.get_root());
+//    t.inorder(t.get_root());
 
-    if(t.search(22) == nullptr)
-    {
-        printf("element is not found \n");
-    }
-    else
-    {
-        printf("element is found \n");
-    }
+//    if(t.search(22) == nullptr)
+//    {
+//        printf("element is not found \n");
+//    }
+//    else
+//    {
+//        printf("element is found \n");
+//    }
 
 
 
-    t.recursiveDelete(t.get_root(), 22);
+//    t.recursiveDelete(t.get_root(), 22);
 
-    t.inorder(t.get_root());
+//    t.inorder(t.get_root());
 
-    if(t.search(22) == nullptr)
-    {
-        printf("element is not found \n");
-    }
-    else
-    {
-        printf("element is found \n");
-    }
+//    if(t.search(22) == nullptr)
+//    {
+//        printf("element is not found \n");
+//    }
+//    else
+//    {
+//        printf("element is found \n");
+//    }
+
+//    t.recursiveDelete(t.get_root(), 2);
+
+//    t.inorder(t.get_root());
+
+//    if(t.search(22) == nullptr)
+//    {
+//        printf("element is not found \n");
+//    }
+//    else
+//    {
+//        printf("element is found \n");
+//    }
+
+
+     AVLTreeGenerator a;
+     a.set_root(a.recursiveInsert(a.get_root(),10));
+     a.recursiveInsert(a.get_root(),5);
+     a.recursiveInsert(a.get_root(),2);
+
+
 
     return 0;
 }

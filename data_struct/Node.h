@@ -5,7 +5,8 @@ class Node
 {
 public:
     Node *lchild {};
-    int data;
+    int data {};
+    int height {}; // use it for AVL tree
     Node* rchild {};
 };
 

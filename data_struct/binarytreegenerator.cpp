@@ -201,31 +201,32 @@ Node *binaryTreeGenerator::recursiveDelete(Node *p, int key)
     {
         if(height(p->lchild) > height(p->rchild))
         {
-            inPre(p->lchild);
+            q = inPre(p->lchild);
             p->data = q->data;
             p->lchild = recursiveDelete(p->lchild, q->data);
         }
         else
         {
-            inSucc(p->lchild);
+            q = inSucc(p->lchild);
             p->data = q->data;
             p->lchild = recursiveDelete(p->lchild, q->data);
         }
 
     }
 
+    return p;
 }
 
 Node *binaryTreeGenerator::inPre(struct Node *p)
 {
-    while(p && p->rchild!=NULL)
+    while(p && p->rchild!=nullptr)
         p=p->rchild;
 
     return p;
 }
 Node *binaryTreeGenerator::inSucc(struct Node *p)
 {
-    while(p && p->lchild!=NULL)
+    while(p && p->lchild!=nullptr)
         p=p->lchild;
 
     return p;
