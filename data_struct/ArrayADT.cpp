@@ -383,3 +383,85 @@ void Array::Swap(int x, int y)
     A[x] = A[y];
     A[y] = temp;
 }
+
+
+
+//in main
+
+
+//    Array arr {};
+//    int n {};
+//    printf("Enter size of an array ");
+//    scanf("%d", &arr.size);
+//    arr.A = (int*)malloc(arr.size*sizeof(int));
+//    arr.lenght = 0;
+
+//    printf("Enter number of numbers");
+//    scanf("%d", &n);
+
+//    printf("Enter all elements\n");
+//    for(int i = 0 ; i < n; ++i)
+//    {
+//        scanf("%d", &arr.A[i]);
+//    }
+
+//    arr.lenght = n;
+
+
+
+//    arr.Append(16);
+//    arr.Insert(3,22);
+//    arr.Delete(5);
+
+//    printf("%d ", arr.SearchLinear(4));
+//     printf("\n");
+//    printf("%d ", arr.SearchBinaryLoop(4));
+//     printf("\n");
+//    printf("%d ", arr.SearchBinaryRecursive(0, arr.lenght-1,5));
+//     printf("\n");
+
+//     arr.Reverse();
+//     arr.LeftShift();
+//     arr.RightShift();
+//     printf("\n");
+//     arr.Display();
+//     int i = 0;
+//     while(i < 20)
+//     {
+//         arr.RightRotate();
+//         printf("\n");
+//         arr.Display();
+//         i++;
+//     }
+
+//    Array arr = {{2,6,10,15,25}, 10, 5};
+//    arr.Display();
+//    printf("\n");
+
+//    Array arr2 = {{3,6,7,15,20}, 10, 5};
+//    arr2.Display();
+//    printf("\n");
+
+//    Array* arr3 = arr.Merge(&arr, &arr2);
+//    arr3->Display();
+//    printf("\n");
+
+//    Array* arr4 = arr.Union(&arr, &arr2);
+//    arr4->Display();
+//    printf("\n");
+
+//    Array* arr5 = arr.Intersection(&arr, &arr2);
+//    arr5->Display();
+//    printf("\n");
+
+//    Array* arr6 = arr.Difference(&arr, &arr2);
+//    arr6->Display();
+//    printf("\n");
+
+//    delete arr4;
+//    delete arr3;
+
+//     MenuDriverProgramArrays menu;
+//     menu();
+
+     //ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY ARRAY

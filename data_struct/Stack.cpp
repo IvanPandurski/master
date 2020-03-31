@@ -156,3 +156,19 @@ int StackArray<T>::stackTop()
 }
 
 
+//in main
+
+
+//    Stack<int> s;
+//    s.push(20);
+//    s.push(40);
+//    s.push(60);
+//    s.display();
+//    s.pop();
+//    s.display();
+
+//     InfixToPostfix infix("2+3*4-6/2");
+//     printf("%s \n", infix.toPostfix());
+//     printf("%d \n", infix.Evaluate());
+
+

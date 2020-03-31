@@ -133,3 +133,10 @@ int AVLTreeGenerator::balanceFactor(Node *p)
 
     return left_height - right_height;
 }
+
+
+//in main
+//AVLTreeGenerator a;
+//a.set_root(a.recursiveInsert(a.get_root(),10));
+//a.recursiveInsert(a.get_root(),5);
+//a.recursiveInsert(a.get_root(),2);

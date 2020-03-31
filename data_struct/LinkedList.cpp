@@ -438,3 +438,77 @@ void LinkedList::Sum()
 }
 
 
+//in main
+//LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST LINKED LIST
+//     int A[] = {3,5,7,10,15};
+
+//     Node::create(A,5);
+//     Node::Display();
+
+//     Node::DisplayRecursion(first);
+//     printf("\n");
+
+//    Node::Count(first);
+//    printf("recursion call count %d \n", Node::CountRecursion(first));
+
+//    Node::Sum();
+
+//    Node::Max();
+
+//    Node* n = Node::Search(15);
+
+//    if(n != nullptr)
+//    {
+//        printf("the key is found - %d \n", n->data);
+//    }
+
+//    Node::Insert(0,22);
+//   Node::InsertLast(5);
+//   Node::Display();
+//   Node::InsertLast(7);
+//   Node::Display();
+//   Node::InsertLast(9);
+//   Node::Display();
+//   Node::InsertInSorted(8);
+//   Node::Display(first);
+//   Node::InsertInSorted(2);
+//   Node::Display(first);
+//   Node::InsertInSorted(1);
+//   Node::Display(first);
+//   Node::InsertInSorted(11);
+//   Node::Display(first);
+//   Node::InsertInSorted(11);
+//   Node::Display(first);
+//   Node::Delete(2);
+//   Node::Display(first);
+//   printf("Is sorted: %d\n", Node::IsSorted());
+//   Node::RemoveDuplicates();
+//   Node::Display(first);
+
+//   int a[] = {10,20,40,50,60};
+//   int b[] = {15,18,25,30,55};
+
+//   Node::create(a,5);
+//   Node::create2(b,5);
+//   Node::Display(first);
+//   Node::Display(second);
+
+//   Node::Merge(first,second);
+//   Node::Display(third);
+
+
+//   printf("size of Node: %d \n", sizeof (Node));
+
+//     int a[] = {10,20,40,50,60};
+//     int b[] = {15,18,25,30,55};
+
+//     LinkedList l1{a,5};
+//     LinkedList l2{b,5};
+//     l1.Display();
+//     l2.Display();
+//     LinkedList l3;
+//     l3.Merge(l1.first,l2.first);
+//     l3.Display();
+
+//     LinkedList circular{a,5,true};
+//     circular.DisplayCircular();
