@@ -13,8 +13,12 @@ int main(int argc, char *argv[])
 {
     sorting a;
     a.print();
-    a.bubbleSort();
+//    a.bubbleSort();
+//    a.insertionSort();
+//    a.selectionSort();
+    a.quicksort();
     a.print();
+
 //    SDL_Window *window;                    // Declare a pointer
 
 //        SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL2
