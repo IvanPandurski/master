@@ -81,3 +81,13 @@ void sorting::quicksort_impl(ForwardIt first, ForwardIt last)
     quicksort_impl(first, middle1);
     quicksort_impl(middle2, last);
 }
+
+
+//in main
+//    sorting a;
+//    a.print();
+////    a.bubbleSort();
+////    a.insertionSort();
+////    a.selectionSort();
+//    a.quicksort();
+//    a.print();

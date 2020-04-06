@@ -8,16 +8,29 @@
 //#include "SDL.h"
 //#include "GL/gl.h"
 #include "sorting.h"
-
+#include "hashing.h"
+#include "graph.h"
+#include <iostream>
 int main(int argc, char *argv[])
 {
-    sorting a;
-    a.print();
-//    a.bubbleSort();
-//    a.insertionSort();
-//    a.selectionSort();
-    a.quicksort();
-    a.print();
+    Graph g(4);
+    g.add_edge(0, 1);
+    g.add_edge(0, 2);
+    g.add_edge(1, 2);
+    g.add_edge(2, 0);
+    g.add_edge(2, 3);
+    g.add_edge(3, 3);
+
+    std::cout << "Following is Breadth First Traversal "
+         << "(starting from vertex 2) \n";
+    g.BFS(2);
+
+    std::cout << "Following is Depth First Traversal"
+                " (starting from vertex 2) \n";
+    g.DFS(2);
+
+
+
 
 //    SDL_Window *window;                    // Declare a pointer
 
