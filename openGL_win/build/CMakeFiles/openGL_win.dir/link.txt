@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\openGL_win.dir/objects.a
+C:\Qt\Tools\mingw810_64\bin\ar.exe cr CMakeFiles\openGL_win.dir/objects.a @CMakeFiles\openGL_win.dir\objects1.rsp
+C:\Qt\Tools\mingw810_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\openGL_win.dir/objects.a -Wl,--no-whole-archive -o openGL_win.exe -Wl,--out-implib,libopenGL_win.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\openGL_win.dir\linklibs.rsp
