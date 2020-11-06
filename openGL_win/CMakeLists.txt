@@ -18,9 +18,10 @@ set(GLEW_INCLUDE_DIRS "C:/ExternalLibs/GLEW/include/")
 set(GLFW_LIBRARIES "C:/ExternalLibs/GLEW/")
 set(GLFW_INCLUDE_DIRS "C:/ExternalLibs/GLEW/include/")
 
+file(GLOB RES_FILES *.frag *.vert *.glsl)
+file(GLOB C_CPP_FILES *.h *.cpp)
 
-
-add_executable(openGL_win main.cpp)
+add_executable(openGL_win  ${C_CPP_FILES} ${RES_FILES})
 
 find_package(OpenGL REQUIRED)
 include_directories( ${OPENGL_INCLUDE_DIRS} )
