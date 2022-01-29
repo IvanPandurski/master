@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,libGLEWd.so.2.1 -o ../lib/libGLEWd.so.2.1.0 CMakeFiles/glew.dir/home/pandurski/Libs/glew-2.1.0/src/glew.c.o  -lGL -lGLU 

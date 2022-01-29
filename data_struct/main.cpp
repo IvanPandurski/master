@@ -5,7 +5,7 @@
 
 //#include "InfixToPostfix.h"
 //#include "binarytreegenerator.h"
-#include "SDL.h"
+#include "SDL2/SDL.h"
 #include "GL/gl.h"
 #include "sorting.h"
 #include "hashing.h"
@@ -147,7 +147,7 @@ int main(int argc, char *argv[])
 
         // The window is open: could enter program loop here (see SDL_PollEvent())
 
-        SDL_Delay(3000);  // Pause execution for 3000 milliseconds, for example
+        SDL_Delay(10000);  // Pause execution for 3000 milliseconds, for example
 
         // Close and destroy the window
         SDL_DestroyWindow(window);

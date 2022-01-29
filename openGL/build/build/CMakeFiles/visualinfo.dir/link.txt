@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/visualinfo.dir/home/pandurski/Libs/glew-2.1.0/src/visualinfo.c.o  -o ../bin/visualinfo  -Wl,-rpath,/home/pandurski/workspace/master/openGL/build/lib: ../lib/libGLEWd.so.2.1.0 -lX11 -lXext -lGL -lGLU 
